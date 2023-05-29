@@ -1,0 +1,13 @@
+Gerar arquivo Z no emporium
+
+- Acesso emporium
+-- Exclusão da leitura Z errada
+-- Acesso via putty e gerado novo arquivo da leitura Z
+--- /home/daniel/scripts/./Z_REPORT_manual.sh
+---/var/emporium/history/REDUCOES/ls -lh *.xml
+---cp 20230528235959_Z257448.xml /var/emporium/to_backoffice/
+
+- Acesso Banco RMS - Consulta e Exclusão dos registros dos PDVs 05 - 11 da loja 6 da 28/05/23
+--select * from ag1pdvtb where pdvtb_filial=6 and pdvtb_data=1230528 and pdvtb_caixa=5
+--select * from ag1pdvrc where pdvrc_filial=6 and pdvrc_data=1230528 and pdvrc_caixa=5
+--select * from ag1pdvop where pdvop_filial=6 and pdvop_data=1230528 and pdvop_caixa=5
